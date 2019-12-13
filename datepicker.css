@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.custom-form-datepicker {
+		position: relative;
+}
+
+.custom-form-datepicker input:hover {
+		cursor: pointer;
+}
+
+.custom-form-datepicker::after {
+		font-family: "Font Awesome 5 Pro";
+		content: "\f271";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 10px;
+		color: #007bff;
+}
+
+.custom-form-datepicker.active::after {
+		content: "\f272";
+}
+
+.datepicker {
+		background: #fff;
+		border-radius: 3px;
+		color: #313131;
+		font-size: 14px;
+		position: absolute;
+		width: 300px;
+		padding: 8px;
+		z-index: 9999;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.datepicker .date-table {
+		width: 100%;
+		text-align: center;
+}
+
+.datepicker .date-table .week-header th {
+		width: 40px;
+		height: 40px;
+		font-weight: 300;
+		font-size: 12px;
+		text-transform: lowercase;
+}
+
+.datepicker .date-table .dates td {
+		border: 1px solid #bebebe;
+		width: 40px;
+		height: 40px;
+		font-weight: 600;
+}
+
+.datepicker .date-table .dates td.day:hover {
+		background-color: #ebebeb;
+		cursor: pointer;
+}
+
+.datepicker .date-table .dates td.day.selected {
+		background-color: #007bff;
+		color: #fff;
+}
+
+.datepicker .date-table .dates td.no-select {
+		color: #bebebe;
+}
+
+.datepicker .title-nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		flex-wrap: wrap;
+		font-size: 16px;
+}
+
+.datepicker .title-nav .picker-header-title {
+		margin: 8px 8px 24px;
+		font-size: 14px;
+}
+
+.datepicker .title-nav .current-month {
+		font-weight: 600;
+		margin: 0 8px;
+}
+
+.datepicker .month-navigation {
+		display: flex;
+}
+
+.datepicker .month-navigation .month-navigate {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		font-weight: 600;
+		color: #bebebe;
+}
+
+.datepicker .month-navigation .month-navigate:hover {
+		color: #313131;
+		cursor: pointer;
+}
+
+.datepicker .time-header {
+		margin: 16px 8px 8px;
+		font-size: 14px;
+}
+
+.datepicker .switch-hours-picker {
+		margin-top: 8px;
+		margin-bottom: 16px;
+}
+
+.datepicker .switch-hours-picker select:hover {
+		cursor: pointer;
+}
+
+.datepicker .switch-hours-picker .input-group-prepend .input-group-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+.datepicker .title-nav .close-picker {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		font-weight: 600;
+		color: #dc3545;
+		margin-bottom: 10px;
+}
+
+.datepicker .title-nav .close-picker:hover {
+		cursor: pointer;
+}

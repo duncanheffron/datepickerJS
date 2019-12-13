@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Date Picker</title>
+  <!-- <link rel="stylesheet" href="main.css" /> -->
+  <link rel="stylesheet" href="datepicker.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/84eaf83d2e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <div class="custom-form-datepicker">
+                <input id="date" type="text" class="form-control custom-datepicker" placeholder="  -  -    " />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script src="main.js"></script> -->
+  <script src="datepicker.js"></script>
+  <script type="text/javascript">
+    datepicker('.custom-datepicker', {
+      availibleTimesMinuteFormat: 15,
+      language: 'dutch'
+    });
+  </script>
+</body>
+</html>
