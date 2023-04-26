@@ -25,8 +25,6 @@
   <p align="center">
     A small custom build javascript datepicker, this to avoid using jQuery.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://github.com/duncanheffron/datepickerJS/issues">Report Bug</a>
     ·
